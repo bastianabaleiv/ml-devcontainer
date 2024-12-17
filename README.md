@@ -1,4 +1,4 @@
-# ML Dev Container
+# ds-tk-devcontainer
 
 This project provides a development environment for machine learning applications using a Dev Container setup. It is designed to facilitate easy transitions to cloud and production environments while ensuring code quality through automated checks.
 
