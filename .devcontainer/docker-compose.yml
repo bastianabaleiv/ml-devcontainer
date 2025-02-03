@@ -1,0 +1,6 @@
+services:
+  python-devenv:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    restart: always
