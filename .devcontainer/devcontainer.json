@@ -1,0 +1,43 @@
+{
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "upgradePackages": false
+        }
+    },
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspaces",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-python.python",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter",
+                "redhat.vscode-yaml",
+                "GrapeCity.gc-excelviewer",
+                "charliermarsh.ruff",
+                "timonwong.shellcheck",
+                "mechatroner.rainbow-csv",
+                "DavidAnson.vscode-markdownlint",
+                "streetsidesoftware.code-spell-checker",
+                "rangav.vscode-thunder-client",
+                "codezombiech.gitignore",
+                "donjayamanne.githistory",
+                "eamodio.gitlens",
+                "ionutvmi.path-autocomplete",
+                "tamasfe.even-better-toml",
+                "Boto3typed.boto3-ide"
+            ]
+        }
+    }
+}
